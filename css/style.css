@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: var(--section-background);
+    color: #24343F;
+
+
+}
+
+:root {
+    --main-color: #0CA7AA;
+    --secondary-color: #FFAB11;
+    --third-color: #E61946;
+    --forth-color: #AA2891;
+    --fith-color: #502D8C;
+    --writing-color: #24343F;
+    --section-background: #f6f6f6;
+
+    --section-padding: 60px;
+}
+
+
+.container {
+    margin: auto;
+}
+
+@media(max-width:768px) {
+    .container {
+        padding: 0 25px;
+
+
+    }
+}
+
+
+@media(min-width:768px) {
+    .container {
+        width: 750px;
+
+
+    }
+}
+
+@media(min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+.header .container a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+.header .container .icons i {
+    color: #777;
+    margin-left: 10px;
+}
+
+.header .container .icons i span {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: normal;
+}
+
+.usr-crd .container {
+    display: flex;
+    background-color: #eee;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.usr-crd .container .image {
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+    border-radius: 50%;
+    border: 1px solid #0CA7AA;
+    overflow: hidden;
+}
+
+.usr-crd .container .image img {
+    width: 100%;
+}
+
+.usr-crd .container .text {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+
+
+}
+
+@media (max-width:768px) {
+    .usr-crd .container {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .usr-crd .container .image img {
+
+        margin: 150px auto;
+
+    }
+
+    .usr-crd .container .text {
+        text-align: center;
+    }
+}
+
+.case .container {
+    display: flex;
+    background-color: #eee;
+    padding: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.case .container img {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+
+
+}
+
+.edu .container .card {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+
+}
+
+.edu .container .card article {
+    display: flex;
+}
+
+.edu .container .card article .text {
+    text-align: right;
+    margin-right: 30px;
+}
+
+@media (max-width:768px) {
+
+    .edu .container .card article {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .edu .container .card article .text {
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+section .container .card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    gap: 20px;
+    padding: 15px 0;
+}
+
+
+section .container .card article {
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--main-color);
+}
+
+section .container .card article p {
+    margin: 10px 0;
+}
+
+section .container .card article h3 {
+    color: var(--main-color);
+
+}
+
+/* page login */
+.pg-login {
+
+
+    padding: 0;
+    background-image: url(../img/mountain.jpg);
+    background-size: cover;
+}
+
+.pg-login .container {
+    display: flex;
+    height: calc(100vh - 88px);
+
+    justify-content: center;
+
+
+    align-items: center;
+
+
+}
+
+.pg-login .container .text {
+    width: 20%;
+    padding: 30px;
+    background-color: var(--main-color);
+    color: white;
+    height: 350px;
+
+}
+
+.pg-login .container .text div{
+    text-align: center;
+}
+.pg-login .container form header {
+    margin-bottom: 30px;
+}
+
+.pg-login .container form {
+    padding: 30px;
+    width: 40%;
+    height: 350px;
+    background-color: white;
+
+}
+
+.pg-login .container form header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pg-login .container form header div {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.pg-login .container form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.pg-login .container form div input {
+    display: block;
+    outline: none;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    padding-right: 30px;
+    border: none;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.pg-login .container form footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+.pg-login .container form footer div {
+    display: flex;
+    flex-direction: row;
+}
+
+.pg-login .container form footer a {
+    display: block;
+    color: white;
+    background-color: var(--main-color);
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 7px 15px;
+
+}
+
+@media (max-width:768px) {
+
+    .pg-login .container {
+        flex-direction: column;
+    }
+
+    .pg-login .container .text {
+        display: none;
+    }
+
+    .pg-login .container form {
+        width: 100%;
+        order: 1;
+    }
+}
