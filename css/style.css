@@ -161,11 +161,7 @@ body {
 
 @media (max-width:768px) {
 
-    .edu .container .card article {
-        display: flex;
-        flex-direction: column;
-
-    }
+    
 
     .edu .container .card article .text {
         text-align: center;
